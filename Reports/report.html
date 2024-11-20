@@ -87,6 +87,7 @@ input[type="submit"]:hover {
 <select id="fecha" name="fecha" onchange="updateReportOptions()">
 <option value="" selected disabled>Seleccione una fecha</option>
 <option value="05_11_2024">05_11_2024</option>
+<option value="20_11_2024">20_11_2024</option>
 </select><br>
 <select id="reporte" name="reporte">
 <option value="">Seleccione un reporte</option>
@@ -105,6 +106,7 @@ function updateReportOptions() {
  if (selectedFecha) {
  var reports = {
  '05_11_2024': ['report_11_53_08', ],
+ '20_11_2024': ['report_11_52_09', ],
  };
  var reportsForSelectedFecha = reports[selectedFecha];
  reportsForSelectedFecha.forEach(function(report) {
