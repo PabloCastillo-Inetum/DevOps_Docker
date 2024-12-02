@@ -86,6 +86,7 @@ input[type="submit"]:hover {
 <div class="contenedorSelect">
 <select id="fecha" name="fecha" onchange="updateReportOptions()">
 <option value="" selected disabled>Seleccione una fecha</option>
+<option value="02_12_2024">02_12_2024</option>
 <option value="05_11_2024">05_11_2024</option>
 <option value="20_11_2024">20_11_2024</option>
 <option value="21_11_2024">21_11_2024</option>
@@ -109,6 +110,7 @@ function updateReportOptions() {
  reporteSelect.innerHTML = '';
  if (selectedFecha) {
  var reports = {
+ '02_12_2024': ['report_12_27_48', ],
  '05_11_2024': ['report_11_53_08', ],
  '20_11_2024': ['report_11_52_09', ],
  '21_11_2024': ['report_09_22_36', 'report_11_19_35', 'report_11_53_29', 'report_14_24_05', ],
